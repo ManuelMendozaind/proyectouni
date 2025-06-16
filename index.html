@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>PROYECTO DEL AREA TECNICA 2024-2025</title>
+   
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .contenedor {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            margin: 0 auto;
+            width: 90%;
+        }
+
+        .imagenes-superiores {
+            width: 90%;
+            margin: 20px auto 10px auto;
+            position: relative;
+            height: 100px;
+        }
+
+        .imagenes-superiores img {
+            width: 100px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .izquierda {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .derecha {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        .cuadro-escuela {
+            border: 3px solid navy;
+            padding: 15px;
+            margin: 20px auto 10px auto;
+            text-align: center;
+            background-color: #d0e7ff;
+            width: 90%;
+            font-size: 26px;
+            font-weight: bold;
+            color: navy;
+            border-radius: 10px;
+        }
+
+        .titulo-principal {
+            border: 3px solid green;
+            padding: 20px;
+            margin: 10px auto 30px auto;
+            text-align: center;
+            background-color: #eaffea;
+            width: 90%;
+            font-size: 28px;
+            font-weight: bold;
+            border-radius: 10px;
+        }
+
+        .imagen img {
+            width: 210px;
+            height: 160px;
+        }
+
+        .navbar {
+            background-color: red;
+            overflow: visible;
+            padding: 0;
+            border-radius: 5px;
+        }
+
+        .menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .menu > li {
+            position: relative;
+            margin: 10px;
+            border: 2px solid #000;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+
+        .menu > li > a {
+            display: block;
+            color: green;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .menu > li > a:hover {
+            background-color: yellow;
+        }
+
+        .submenu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: green;
+            min-width: 160px;
+            z-index: 9999;
+            border-radius: 0 0 5px 5px;
+        }
+
+        .submenu a {
+            padding: 12px 16px;
+            color: white;
+            text-decoration: none;
+            display: block;
+        }
+
+        .submenu a:hover {
+            background-color: darkgreen;
+        }
+
+        .menu li:hover .submenu {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+  
+    <p>Nombre: Mendoza Cerezo Manuel Adrian</p>
+    <p>Curso: Tercero "M"</p>
+
+    <!-- IMÁGENES A LOS LADOS DEL TÍTULO -->
+    <div class="imagenes-superiores">
+        <img src="C:\Users\PILIMILI10\Desktop\mejoramiga.jpeg" alt="Imagen izquierda" class="izquierda">
+        <img src="C:\Users\PILIMILI10\Desktop\escudonicolas.gif" alt="Imagen derecha" class="derecha">
+    </div>
+
+    <!-- TÍTULO DE LA ESCUELA -->
+    <div class="cuadro-escuela">
+        Unidad Educativa Nicolás Infante Díaz
+    </div>
+
+    <!-- TÍTULO PRINCIPAL -->
+    <div class="titulo-principal">
+        <span style="color:green">PROYECTO</span>
+        <span style="color:red"> - </span>
+        <span style="color:blue">DE</span>
+        <span style="color:red"> - </span>
+        <span style="color:green">LA ÁREA TÉCNICA INFORMÁTICA</span>
+        <span style="color:red"> - </span>
+        <span style="color:blue">2025 - 2026</span>
+    </div>
+
+    <!-- MENÚ DE NAVEGACIÓN -->
+    <div class="navbar">
+        <ul class="menu">
+            <li>
+                <a href="#">Diseño Web</a>
+                <ul class="submenu">
+                    <li><a href="file:///C:/Users/PILIMILI10/Desktop/que%20es%20el%20github.html">1er Trimestre</a></li>   
+                    <li><a href="#">2do Trimestre</a></li>
+                    <li><a href="#">3er Trimestre</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Sistemas Operativos y Redes</a>
+                <ul class="submenu">
+                    <li><a href="#">1er Trimestre</a></li>
+                    <li><a href="#">2do Trimestre</a></li>
+                    <li><a href="#">3er Trimestre</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Soporte Técnico</a>
+                <ul class="submenu">
+                    <li><a href="#">1er Trimestre</a></li>
+                    <li><a href="#">2do Trimestre</a></li>
+                    <li><a href="#">3er Trimestre</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Aplicaciones Ofimática y Redes</a>
+                <ul class="submenu">
+                    <li><a href="#">1er Trimestre</a></li>
+                    <li><a href="#">2do Trimestre</a></li>
+                    <li><a href="#">3er Trimestre</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Programación y Base de Datos</a>
+                <ul class="submenu">
+                    <li><a href="#">1er Trimestre</a></li>
+                    <li><a href="#">2do Trimestre</a></li>
+                    <li><a href="#">3er Trimestre</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+</body>
+</html>
